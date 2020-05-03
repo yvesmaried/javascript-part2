@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 4</title>
+</head>
+
+<body>
+    <h1>Exercice 4</h1>
+    <p>Demander une note à l'utilisateur :</p>
+    <ul>
+        <li>Si elle est entre 0 et 3 afficher Nul</li>
+        <li>Si elle est entre 4 et 6 afficher Moyen</li>
+        <li>Si elle est entre 7 et 9 afficher Bien</li>
+        <li>Si elle est égale à 10 afficher Excellent</li>
+    </ul>
+
+    <script>
+        let number = +(prompt('veuillez entrer la note de l\'eleve'));
+
+        if (isNaN(number) || number < 0 ) {
+            alert("c'est pas un chiffre patate !");
+
+        } 
+        if (number >= 0 && number <= 3) {
+            console.log('nul');
+            alert('nul');
+        } 
+        else if (number >= 4 && number <= 6) {
+            console.log('moyen');
+            alert('moyen');
+        } 
+        else if (number >= 7 && number <= 9) {
+            console.log('bien');
+            alert('bien');
+        } 
+        else if (number == 10) {
+            console.log('excellent');
+            alert('excellent');
+        }
+    </script>
+</body>
+
+</html>

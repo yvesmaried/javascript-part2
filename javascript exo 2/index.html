@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 2</title>
+</head>
+
+<body>
+    <h1>Exercice 2</h1>
+    <p>Demander à l'aide d'une boîte de dialogue l'âge d'un utilisateur. S'il a plus de 18 ans, lui afficher Vous êtes
+        majeur, sinon lui afficher Vous êtes mineur.</p>
+
+    <script>
+        let number = +(prompt("quel est votre age ?"));
+
+        if (isNaN(number) || number < 0 ) {
+            alert("c'est pas un chiffre patate !");
+        } 
+        else if (number <= 18) {
+            alert("Vous êtes mineur");
+        } 
+        else if (number) {
+            alert("Vous êtes majeur");
+        }
+    </script>
+</body>
+
+</html>
